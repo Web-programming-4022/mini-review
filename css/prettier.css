@@ -1,0 +1,59 @@
+:root {
+  --sample: #23272e;
+  --color: rgb(238, 234, 234);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: vazirMatn; /* ☻ */
+}
+
+body {
+  color: var(--color);
+  font-family: vazirMatn;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin-inline: auto;
+}
+
+header {
+  display: flex;
+  padding: 16px;
+  margin-inline: auto;
+  background-color: #23272e;
+}
+
+header nav.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav.container ul {
+  display: flex;
+  gap: 6px;
+}
+
+main {
+  width: 80%;
+}
+
+main form {
+  max-width: 50%;
+  gap: 4px;
+  display: flex;
+  margin-left: auto;
+  flex-direction: column;
+}
+
+aside {
+  width: 20%;
+}

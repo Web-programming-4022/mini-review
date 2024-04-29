@@ -1,0 +1,57 @@
+@font-face {
+  font-family: name;
+  src: url("./font1.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: name;
+  src: url("./font2.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: name;
+  src: url("./font3.ttf");
+  font-weight: 800;
+}
+
+* {
+  /* p : (0,0,0) */
+  background: black;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.canBeSame {
+  /* p : (0,1,0) */
+  background: blue;
+}
+.canBeSame.anotherClass {
+  /* p : (0,2,0) */
+  background: rebeccapurple;
+}
+
+#unique {
+  /* p : (1,0,0) */
+  background: goldenrod;
+}
+
+p {
+  /* p : (0,0,1) */
+  color: goldenrod;
+}
+
+/* !important p : (1000,1000,1000) */
+
+@media screen and (min-width: 768px) {
+  p {
+    color: red;
+  }
+}
+
+@media (width > 1024px) {
+  p {
+    color: blue;
+  }
+}
