@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en  " dir="ltr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,7 +9,7 @@
   </head>
   <body>
     <header id="unique" class="canBeSame anotherClass">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light custom-bg">
         <a class="navbar-brand" href="#">Navbar</a>
         <button
           class="navbar-toggler"
@@ -73,7 +73,7 @@
 
     <section class="container">
       <section class="row">
-        <aside class="col-12 col-md-4 bg-info">
+        <aside class="col-12 col-md-4 bg-info order-1 order-md-0">
           <ol>
             <li><a class="text-dark" href="./anywhere">CAPTION LINK</a></li>
             <li><a class="text-dark" href="./anywhere">CAPTION LINK</a></li>
@@ -82,7 +82,7 @@
           </ol>
         </aside>
 
-        <main class="col-12 col-md-8">
+        <main class="col-12 col-md-4 bg-primary">
           <!-- main title -->
           <h1></h1>
           <article></article>
@@ -106,6 +106,13 @@
             <button type="submit" disabled>submit</button>
           </form>
         </main>
+
+        <p class="order-0 order-md-2 col-12 col-md-4 bg-danger">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
+          rem, dolore sapiente minima ut, unde nihil quod vel sit culpa adipisci
+          aliquid fugit consectetur optio eaque temporibus mollitia expedita
+          animi.
+        </p>
       </section>
     </section>
 

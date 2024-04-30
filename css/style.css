@@ -1,44 +1,54 @@
 @font-face {
-  font-family: name;
+  font-family: customFont;
   src: url("./font1.ttf");
   font-weight: 400;
 }
 
 @font-face {
-  font-family: name;
+  font-family: customFont;
   src: url("./font2.ttf");
   font-weight: 600;
 }
 
 @font-face {
-  font-family: name;
+  font-family: customFont;
   src: url("./font3.ttf");
   font-weight: 800;
 }
 
 * {
   /* p : (0,0,0) */
+  font-family: customFont;
   background: black;
-
+  color: whitesmoke;
   transition: all 0.3s ease-in-out;
 }
 
 .canBeSame {
   /* p : (0,1,0) */
+
+  font-weight: 600; /* refer to line 7 */
   background: blue;
 }
 .canBeSame.anotherClass {
   /* p : (0,2,0) */
+
   background: rebeccapurple;
 }
 
 #unique {
+  background-color: blue;
+}
+
+#unique .css {
   /* p : (1,0,0) */
+
   background: goldenrod;
 }
 
 p {
   /* p : (0,0,1) */
+
   color: goldenrod;
 }
 
