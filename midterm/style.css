@@ -1,0 +1,169 @@
+.slider {
+  max-height: 100vh;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+}
+
+.slider > section {
+  scroll-snap-align: start;
+
+  width: 100%;
+  min-height: 100vh;
+  font-size: 1.5rem;
+}
+
+.float-inline {
+  float: left;
+}
+
+@font-face {
+  font-family: Name;
+  src: url("./index.html");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Name, Vazirmatn;
+
+  gap: 12px;
+}
+
+.p2 {
+  padding: 40px;
+  width: 600px;
+  height: 400px;
+  background-color: rgb(255, 49, 49);
+  border-radius: 20px 35px 50px 0px;
+
+  position: relative;
+}
+
+.p2 p {
+  position: absolute;
+  right: 0;
+  bottom: 50px;
+  /* top: 50px; */
+  left: 100px;
+}
+
+div p {
+  /* background-color: purple !important; */
+}
+
+.p3 :nth-child(odd) {
+  color: red;
+}
+
+.p3 p:last-child {
+  color: darkblue;
+}
+
+a:hover {
+  color: brown;
+}
+
+#box0 {
+  display: flex;
+}
+
+#box1 {
+  flex: 1;
+  background-color: coral;
+}
+
+#box2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#box21 {
+  flex: 1;
+  background-color: purple;
+  display: flex;
+  flex-direction: column;
+}
+
+#box3 {
+  display: flex;
+}
+
+#box31 {
+  flex: 1;
+  background-color: plum;
+}
+
+#box32 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#box4 {
+  background-color: gold;
+  order: 1;
+}
+
+#box5 {
+  background-color: navy;
+}
+
+@media (width < 768px) {
+  #box0 {
+    flex-direction: column;
+  }
+  #box3 {
+    flex-direction: column;
+  }
+}
+
+#position0 {
+  display: flex;
+  gap: 24px;
+  position: relative;
+}
+
+#position0 > div {
+  width: 100px;
+  border-radius: 16px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(39, 237, 66);
+}
+
+#position1 {
+  position: relative;
+  top: 200px;
+}
+
+#position2 {
+  background-color: red !important;
+  position: absolute;
+  top: 200px;
+}
+
+#position3 {
+  left: 0;
+  position: fixed;
+  top: 200px;
+}
+
+#position4 {
+  position: sticky;
+  top: 25px;
+}
+.flex {
+  margin-top: 15px;
+  /* background-color: red; */
+  display: flex;
+  height: 256px;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.flex p {
+  /* background-color: blueviolet; */
+}

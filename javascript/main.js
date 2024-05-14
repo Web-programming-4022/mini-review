@@ -33,6 +33,7 @@ document.addEventListener("keydown", (e) => {
   const elementBuilder = document.querySelector(".elementBuilder");
   const tag = document.createElement("a");
   tag.innerText = `you pressed ${e.key}`;
+  if (e.key === "ArrowDown") alert("کلیک روی ↓");
   elementBuilder.appendChild(tag);
 
   if (e.key === "ArrowUp") return alert("you cliked the one you want !");
