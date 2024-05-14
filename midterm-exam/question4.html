@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q4</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      div {
+        min-height: 50px; /* to be visible in browser */
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .header-and-image {
+        display: flex;
+      }
+      .header {
+        flex: 2;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+        background-color: rgb(28, 156, 28);
+      }
+      .image {
+        background-image: url("./");
+        flex: 1;
+
+        background-color: rgb(114, 228, 114);
+      }
+
+      .three-body {
+        display: flex;
+      }
+      .body {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: gray;
+      }
+
+      .body:nth-child(1) {
+        background-color: rgb(68, 184, 184);
+      }
+      .body:nth-child(2) {
+        background-color: rgb(231, 127, 53);
+      }
+      .body:nth-child(3) {
+        background-color: rgb(161, 74, 199);
+      }
+
+      .body button {
+        border-radius: 50%;
+      }
+
+      .footer {
+        display: flex;
+
+        justify-content: space-between;
+        /* ✅ */
+        justify-content: space-around;
+
+        align-items: start;
+        /* ✅ */
+        align-items: flex-start;
+
+        background-color: rgb(255, 121, 121);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header-and-image">
+        <div class="image"></div>
+        <div class="header">header</div>
+      </div>
+
+      <div class="three-body">
+        <div class="body">
+          <button>body</button>
+        </div>
+        <div class="body">
+          <button>body</button>
+        </div>
+        <div class="body">
+          <button>body</button>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>footer</p>
+        <p>footer</p>
+        <p>footer</p>
+      </div>
+    </div>
+  </body>
+</html>
